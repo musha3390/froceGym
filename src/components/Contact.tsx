@@ -128,7 +128,7 @@ export default function Contact() {
                   value={formData.name}
                   onChange={handleChange}
                   className={`w-full bg-surface-light border ${errors.name ? 'border-red-500 focus:border-red-500' : 'border-white/10 focus:border-primary'} rounded px-4 py-3 text-white focus:outline-none transition-colors`}
-                  placeholder="John Doe"
+                  placeholder="Your Name"
                 />
                 {errors.name && <p className="text-red-500 text-sm mt-1.5">{errors.name}</p>}
               </div>
@@ -140,7 +140,7 @@ export default function Contact() {
                   value={formData.email}
                   onChange={handleChange}
                   className={`w-full bg-surface-light border ${errors.email ? 'border-red-500 focus:border-red-500' : 'border-white/10 focus:border-primary'} rounded px-4 py-3 text-white focus:outline-none transition-colors`}
-                  placeholder="john@example.com"
+                  placeholder="Email Address"
                 />
                 {errors.email && <p className="text-red-500 text-sm mt-1.5">{errors.email}</p>}
               </div>
@@ -195,14 +195,14 @@ export default function Contact() {
                   <Phone className="text-primary mr-4 shrink-0 mt-1" />
                   <div>
                     <h5 className="text-white font-bold mb-1">Phone</h5>
-                    <p className="text-gray-400">+91 XXXXXXXX</p>
+                    <p className="text-gray-400">+91 6386857244</p>
                   </div>
                 </div>
                 <div className="flex items-start">
                   <Mail className="text-primary mr-4 shrink-0 mt-1" />
                   <div>
                     <h5 className="text-white font-bold mb-1">Email</h5>
-                    <p className="text-gray-400">example@gmail.com</p>
+                    <p className="text-gray-400">mushahidr317@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start">
