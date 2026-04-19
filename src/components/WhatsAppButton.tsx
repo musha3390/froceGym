@@ -6,7 +6,7 @@ import { MessageCircle } from "lucide-react";
 export default function WhatsAppButton() {
   return (
     <motion.a
-      href="https://wa.me/910000000000" // Replace with actual number
+      href="https://wa.me/6386857244" // Replace with actual number
       target="_blank"
       rel="noopener noreferrer"
       initial={{ scale: 0 }}

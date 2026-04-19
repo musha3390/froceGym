@@ -30,7 +30,7 @@ export default function About() {
                 backgroundImage: "url('https://images.unsplash.com/photo-1540497077202-7c8a3999166f?q=80&w=2070&auto=format&fit=crop')",
               }}
             />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/80 to-transparent" />
             <div className="absolute bottom-6 left-6 right-6">
               <div className="bg-primary/90 backdrop-blur text-white p-6 rounded border border-white/20">
                 <h3 className="text-3xl font-heading font-bold mb-1">10+ Years</h3>
@@ -58,7 +58,7 @@ export default function About() {
             <ul className="space-y-4 mb-10">
               {highlights.map((item, index) => (
                 <li key={index} className="flex items-center text-gray-300">
-                  <CheckCircle className="text-primary mr-3 flex-shrink-0" size={24} />
+                  <CheckCircle className="text-primary mr-3 hrink-0" size={24} />
                   <span className="text-lg">{item}</span>
                 </li>
               ))}

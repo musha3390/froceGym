@@ -26,7 +26,7 @@ export default function Contact() {
             className="bg-surface p-8 rounded-lg"
           >
             <h4 className="text-2xl font-heading font-bold text-white uppercase mb-6">Send a Message</h4>
-            <form className="space-y-6">
+            <form className="space-y-6" >
               <div>
                 <label className="block text-sm font-medium text-gray-400 mb-2">Full Name</label>
                 <input
@@ -72,28 +72,28 @@ export default function Contact() {
               <h4 className="text-2xl font-heading font-bold text-white uppercase mb-6">Contact Info</h4>
               <div className="space-y-6">
                 <div className="flex items-start">
-                  <MapPin className="text-primary mr-4 flex-shrink-0 mt-1" />
+                  <MapPin className="text-primary mr-4 shrink-0 mt-1" />
                   <div>
                     <h5 className="text-white font-bold mb-1">Location</h5>
                     <p className="text-gray-400">Sector 58, Mohali, Punjab</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Phone className="text-primary mr-4 flex-shrink-0 mt-1" />
+                  <Phone className="text-primary mr-4 shrink-0 mt-1" />
                   <div>
                     <h5 className="text-white font-bold mb-1">Phone</h5>
                     <p className="text-gray-400">+91 XXXXXXXX</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Mail className="text-primary mr-4 flex-shrink-0 mt-1" />
+                  <Mail className="text-primary mr-4 shrink-0 mt-1" />
                   <div>
                     <h5 className="text-white font-bold mb-1">Email</h5>
                     <p className="text-gray-400">example@gmail.com</p>
                   </div>
                 </div>
                 <div className="flex items-start">
-                  <Clock className="text-primary mr-4 flex-shrink-0 mt-1" />
+                  <Clock className="text-primary mr-4 shrink-0 mt-1" />
                   <div>
                     <h5 className="text-white font-bold mb-1">Working Hours</h5>
                     <p className="text-gray-400">Mon - Sat: 6:00 AM - 10:00 PM</p>

@@ -28,7 +28,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.2 }}
           className="text-5xl md:text-7xl lg:text-8xl font-heading font-bold text-white uppercase tracking-tight mb-6"
         >
-          Unleash Your <span className="text-primary text-transparent bg-clip-text bg-gradient-to-r from-primary to-red-600">Inner Beast</span>
+          Transform Your Body in <span className="text-primary bg-clip-text bg-linear-to-r from-primary to-red-600">90 Days</span>
         </motion.h1>
 
         <motion.p
@@ -37,7 +37,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4 }}
           className="text-xl md:text-2xl text-gray-300 font-light mb-10"
         >
-          Transform Your Body, Transform Your Life
+         Join Mohali’s Most Trusted Gym Today
         </motion.p>
 
         <motion.div
