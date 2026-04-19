@@ -1,10 +1,20 @@
 import nodemailer from "nodemailer";
 import { NextResponse } from "next/server";
 
+type RequestBody = {
+  name: string;
+  email: string;
+  message: string;
+};
 
-async function POST(req){
+export async function POST(req: Request){
    try{
-    const {name,email,message} = await req.json()
+    const body:RequestBody = await req.json()
+    const {name,email,message} = body;
+
+    if(!name || !email || !message){
+      return NextResponse.json({success: false,error:"all fields are required"}, {status:400})
+    }
     const transporter = nodemailer.createTransport({
         service: "gmail",
         auth: {
@@ -18,21 +28,16 @@ async function POST(req){
         to: process.env.EMAIL_USER,
         replyTo: email,
         subject: `New Gym Enquiry: ${name}`,
-        html: `
-        <h3>New Enquiry from ${name}</h3>
-        <p><strong>Email:</strong> ${email}</p>
-        <p><strong>Message:</strong> ${message}</p>
-          `,
+        text: message,
         };
 
         await transporter.sendMail(multiOption);
 
         return NextResponse.json(
-            {status: 200, message: "message send successfully"},
-            {success: true},
+            {success: true}
         )
     
-   }catch(error){
+   }catch(error: any){
     return NextResponse.json({success: false,error:error.message}, {status:500})
    }
 }
